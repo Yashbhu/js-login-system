@@ -1,19 +1,16 @@
-let username=prompt('who tf are u','');
+let username = prompt('Kaun be tu?', '');
 
-if (username==='yash'){
-    alert('aja bhai');
-let password=prompt('chal ab password bata',''); // ❌ ERROR: Yeh hamesha chalega, chahe username galat ho ya sahi.
-if(password==='choot'){
-    alert('are y to apna hi hai');
-}else if(username===''||username===null){ // ❌ ERROR: Yeh condition password check ke andar nahi honi chahiye.
-    alert('ma chuda time chod raha bas');
-}else{
-    alert('pakla gaya madharchod');
-}}
-else if(username===''||username===null){  // ❌ ERROR: Else ke baad ek aur `else if` likhna galat hai.
-    alert('jb pata nhi to yaha kya gand marvane aya hai bsdk');
-}
-else{
-    alert('nikal behen ke lode kon hai be tu')
-}
+if (username === 'yash') {
+    alert('Aaja bhai, apna hi banda hai!');
 
+    let password = prompt('Chal password bata ab:', '');
+
+    if (password === 'nodogyara') {
+        alert('Arey apna aadmi hai, VIP entry de di!');
+    } else if (password === '' || password === null) {
+        alert('Bhai bina password ke entry nahi milegi, soch le!');
+    } else {
+        alert('Bhaag yaha se, security bulaun kya?');
+    }
+} else if (username === '' || username === null) {
+    alert(
